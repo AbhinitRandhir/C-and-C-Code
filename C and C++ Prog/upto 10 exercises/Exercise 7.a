@@ -1,0 +1,73 @@
+Example: Exception handling using try...catch
+
+class Main {
+  public static void main(String[] args) {
+
+    try {
+
+      // code that generate exception
+      int divideByZero = 5 / 0;
+      System.out.println("Rest of code in try block");
+    }
+    
+    catch (ArithmeticException e) {
+      System.out.println("ArithmeticException => " + e.getMessage());
+    }
+  }
+}
+
+Example: Java Exception Handling using finally block
+
+class Main {
+  public static void main(String[] args) {
+    try {
+      // code that generates exception
+      int divideByZero = 5 / 0;
+    }
+
+    catch (ArithmeticException e) {
+      System.out.println("ArithmeticException => " + e.getMessage());
+    }
+    
+    finally {
+      System.out.println("This is the finally block");
+    }
+  }
+}
+
+Example: Exception handling using Java throw
+
+class Main {
+  public static void divideByZero() {
+
+    // throw an exception
+    throw new ArithmeticException("Trying to divide by 0");
+  }
+
+  public static void main(String[] args) {
+    divideByZero();
+  }
+}
+
+Example: Java throws keyword
+
+import java.io.*;
+
+class Main {
+  // declareing the type of exception
+  public static void findFile() throws IOException {
+
+    // code that may generate IOException
+    File newFile = new File("test.txt");
+    FileInputStream stream = new FileInputStream(newFile);
+  }
+
+  public static void main(String[] args) {
+    try {
+      findFile();
+    }
+    catch (IOException e) {
+      System.out.println(e);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Polymorphism:-
+            Polymorphism is the process of performing the single task in different ways. Polymorphism is the Greek word . In which  ‘poly‘  means many and   ‘morphs ’  means  forms. It means  many forms .
+Polymorphism is classified into two types they are-
+1.      Static  or Compile time Polymorphism
+2.      Dynamic  or Run time  Polymorphism
+Runtime Polymorphism:-
+            Runtime Polymorphism is also called as Dynamic polymorphism. It is the process of calling the Overriding methods in runtime rather than In compile time.
+In  this process  the  overriding methods are called with reference of super class.
+Explanation:-
+            In the above program we use single inheritance two achieve the runtime polymorphism in our example.
+We use two classes here. We call the base class with the reference of  the super class.
+ We create different objects to the two classes and call the both base   class   as well as super class with reference of super class only.
+So, Runtime polymorphism is achieved here.
